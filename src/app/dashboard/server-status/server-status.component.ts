@@ -12,6 +12,10 @@ export class ServerStatusComponent {
 
   constructor() {
 
+  }
+
+  ngOnInit() {
+    
     setInterval(() => {
 
       const rnd = Math.random();
