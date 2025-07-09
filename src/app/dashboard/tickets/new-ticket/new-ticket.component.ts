@@ -12,7 +12,10 @@ import { FormsModule } from '@angular/forms';
 })
 export class NewTicketComponent {
 
-  onSubmit() {
+  onSubmit(title: string, ticketText: string, form: HTMLFormElement) {
+    console.log(title, ticketText);
     console.log('submit');
+    form.reset();
+    
   }
 }
